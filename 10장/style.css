@@ -1,0 +1,76 @@
+/* 문서 전체 (*) 글꼴은 맑은 고딕, 바깥 여백 5 */
+* {
+    font-family: "맑은 고딕";
+    margin: 5px;
+}
+
+header, footer {
+    padding: 20px;
+    background-color: rgb(129, 249, 247);
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(245, 190, 190, 0.698);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* 리스트는 기본이 세로 정렬 a는 가로 정렬 가로는 길이를 적용 시키기 어려움 그러기에 inline-block을 써서 적용 시키기*/
+nav a {
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    display: inline-block;
+}
+/* 이게 이제 마우스 올리기 전에 */
+a:link, a:visited {
+    color: black;
+}
+/* 이게 이제 마우스 올리고 난후 hover은 올렷을때 active는 눌럿을때*/
+/* text-decoration에서 overline은 마우스를 위에 라인 underline은 아래에 라인이 생긴다*/
+a:hover, a:active {
+    color: white;
+    background-color: aqua;
+    text-decoration: underline;
+}
+
+section {
+    background-color: rgba(235, 232, 232, 0.922);
+    border: 5px solid black;
+    width: 48%;
+    height: 200px;
+    float: left;
+}
+
+.c1 {
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    clear: both;
+}
+
+#s1 h1 {
+    background-color: rgb(255, 167, 167);
+}
+
+#s2 h1 {
+    background-color: rgb(233, 191, 112);
+}
+#s3 h1 {
+    background-color: rgb(227, 227, 80);
+}
+#s4 h1 {
+    background-color: rgb(138, 255, 138);
+}
+#s5 h1 {
+    background-color: rgb(147, 147, 255);
+}
+#s6 h1 {
+    background-color: rgb(255, 155, 255);
+}
