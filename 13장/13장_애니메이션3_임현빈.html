@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 3 - 임현빈</title>
+    <style>
+        #box1{
+            height: 60px;
+            margin-top: 50px;
+            margin-left: 100px;
+            padding: 20px;
+            background-color: gold;
+            animation-name: moving;/* 어느 놈을 건들지 지정*/
+            animation-duration: 3s; /*3초동안 실행*/
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+        @keyframes moving{
+            from{
+                width: 200px;
+                background-color: darkred;
+                transform: scale(0.5) rotate(15deg);
+                opacity: 0.5;/*투명도*/
+                font-size: 0.5em;
+            }
+            to{
+                font-size: 1em;
+                width: 400px;
+                background-color: rgb(255, 131, 131);
+                transform: scale(1) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <h1>CSS3 Animation</h1>
+    </div>
+</body>
+</html>

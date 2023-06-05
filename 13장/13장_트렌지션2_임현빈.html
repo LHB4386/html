@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트렌지션2 임현빈</title>
+    <style>
+        .tr{
+            width:200px;
+            height:200px;
+            margin: 30px;
+            background-color:aquamarine;
+            transition-property: width,height,border-radius;/*속성선택*/
+            transition-duration: 2s, 3s,3s;/*선택된 속성의 변화속도 결정*/
+        }
+        .tr:hover{
+            width:400px;
+            height: 300px;
+            border-radius: 50px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="tr">
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 2 - 임현빈</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 50px;
+        }
+
+        #box1{
+            background-color: gold;
+            animation-name: change-shape;/* 어느 놈을 건들지 지정*/
+            animation-duration: 3s; /*3초동안 실행*/
+        }
+
+        #box2{
+            background-color: violet;
+            animation-name: rotate;/* 어느 놈을 건들지 지정*/
+            animation-duration: 5s; /*3초동안 실행*/
+        }
+
+        @keyframes change-shape{/*지정된 놈을 키프레임으로 애니메이션 효과 주기*/
+            from{
+                background-color: gold;
+                border: 1px solid green;
+            }
+            to{
+                background-color: blue;
+                border: 1px solid red;
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes rotate{/*지정된 놈을 키프레임으로 애니메이션 효과 주기*/
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>

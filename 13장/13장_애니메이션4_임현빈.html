@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 4 - 임현빈</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            background-color: gold;
+            animation-name: change-shape;/* 어느 놈을 건들지 지정*/
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;/*무한반복*/
+            animation-direction: normal;
+        }
+
+        @keyframes change-shape{/*지정된 놈을 키프레임으로 애니메이션 효과 주기*/
+            from{
+                transform: perspective(120px) rotateX(0deg) rotateY(0deg); 
+            }
+            50%{/*50퍼센트 부분 시작에서는 XY각각 0도에서 중간까지는 X만 -180도로 Y는 그대로 끝에서는 X는 -180도 그대로 Y만 -180도로움직임*/
+                transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+            }
+            to{
+                transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
